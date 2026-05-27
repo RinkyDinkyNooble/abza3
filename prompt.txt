@@ -1,0 +1,76 @@
+I want you to do the following:
+1. understand what the code does.
+The purpose of the code is to convert a .schem file made from minecraft mod world edit (1.20.1) forge, into a .json file that is a "part" for a custom city in the lost cities mod generation. This script is functional, and works as intended. 
+
+old.py
+ is the file that contains the code. dont worry about license or readme.
+
+2. Find better package alternatives if relevant, for python 3.14.2
+
+3. create a new file called main.py that has the improvements on the initial script. this new script is meant to be a command line tool, such that I prompt input like:
+python main.py <type> <filename.schem> --c=<cellar count> --f=<floor count> <output name>. there will be defaults for "flag"s.
+
+the changes include:
+1. no more watchdog
+2. chunking system
+3. palette separation
+4. "infinite" palatte generation
+
+chunking system works like this; notice old.py converts one "part=16x, 6y,16z in blocks" (top parts have unlimited y range), the chunking system accepts a schematic of any size, such that it breaks the schematic down into: multibuilding = buildings = parts. reference examples folder to understand structure. and lost cities mod wiki for 1.20.1
+
+there will be 3 commands, part, building, & multibuilding. each refer to a case scenario. part scenario converts input schem, regardless of y sizes, could be 16x5x16, and it converts straight to a part.json with the relevant palette embeded in that file. it errors saying x,z are not 16 blocks if its not, and in output tells what size xyz all are. 
+
+case of building, you take the -c and -f flags that indicate the amount of cellars, and floors respectively, ground, and top is automatically assumed. 
+for exmple, a building may have 2 cellar variants, they will be built on top of each other directly, then ground flr, then 3 floor variants, then after that is a top. in this case, you have : c,c,g,f,f,f,t all stacked on top of each other. lets call this a building spec package. when I run the program with building command, i must input --c=2 and --f=3, the program knows to jump 6 blocks inbetween f1 and cellar, that is ground flr. then it knows after f3 roof, is the top. everything from top level onwards is top, no 6 block expectation there. -u means unique, and it default is false, but u say --u=truethat states, every part is strictly at its location, and not a variation, in the last example that means, c,c,g,f,f,f,t becaomes: c2,c1,g,f1,f2,f3,t such that the building file output looks similar to 
+
+unique_building_example_file.json
+where each floor is indicated its space, min and max floors cover the exact floor count. cellars have flexable options, for now, dont set it to :-1 for cellar numbers, and leave open anyways.
+
+multibuiling is just an extension such that it uses buildings as its parts, but not stacked vertically, but layed out beside each other in a grid. the examples show many valid setups.
+if i wanted a multibuilding, the program automatically determines how many chunks the multibiulding setup will be based on block count in the x and z direction, example 32x, 32z is a 2x2 chunk multibuilding. needs 4 building files. 
+if it were 40x,60z this would be a 3x4 chunk multibuilding. missing blocks that make up to 48x64  being default air. 
+
+multibuilding program validates block sizes and errors if smaller than 16x,16z saying to use building command. and vise versa with building command.
+
+multibuildings is just buildings, buildings are just parts. parts are just made with the CORE LOGIC in the old.py file. that essance of logic must be captured to do exactly what it does.
+
+all parts apart of the same building reference one palette file like:
+"refpalette": "<name>_palette".
+all parts apart of the same multibuilding also reference the same palette. the palette is combined in these cases to one file for modularity sake.
+when JUST doing a part, then the palette is embedded within the .json file of the part.
+
+the palette generater is really just a UTF-8 char generator. instead of fixed valid chars, it collects/reads all unique blocks, then generates a list of valid utf8 chars to map to those blocks.
+assume there will always be less blocks than all possible utf8 characters, if not, do a check that there are less unique block ids than a const u find on interent that tells u total utf8 chars, and just put that const at top of file. 
+
+handle errors gracefully with information provided. use cli pacakges if needed, use, beartype and type chekcing if needed. i will setup pytest my self, no need to. 
+
+output directory is a flag -d but is calculated by checking the and asking the OS's downloads directory. then within the target directory (either flag or default) it find or creates directory called "output", the name of this file is configurable wit a const at top of file.
+each flag i shortened, but u would make it make sense,
+-c : --cellars= 
+etc...
+make sure --help is implemented with verbose/full detail.
+ 
+example output case: part:
+it just outputs a file at output directory. like output/name folder/output file.json
+example output case building:
+it outputs output/building_name folder/
+1. building file .json
+2. parts/ part files
+3. palette .json file
+example multibuilding:
+output/multibuilding name folder/
+1. buildings/ buildings files
+2. parts/ part files
+3. name_palette.json 
+
+remember to follow naming convention, all palettes end with _palette and all multibuildings end with _multibuilding, same with _building, then all buildings and parts have number indexes at the end, like _0_0, or _0_1_0 etc. make sure to understand how that works before implementing if u dont already. the name inputted in command is apart of every single file related to it at the beginning. <name><relevant numbers><indication if multibuilding, building, or palette>....json
+
+1. correct, expect everything but top to be 6 blocks tall, and except part command mode. 
+2. --u=false is default, everything stated before is default, -u being true means each floor is not a vairation competing for a spot via probiblity to on each floor, instead, it exist at that exact spot relative to the rest of the floors. does that clarify?
+default ommits floor: x, only unique contains that.
+3. yes grid coords for multibuidlings is correct. but its kinda weird tbh, im not sure exacts, i just know that the base.json multibuilding generates all buildigns/parts correctly relative to each other. so look through the relevant buldings and parts related.
+4. use nbtlib IF IT WORKS, go for it. search and confirm that it does.
+if possible to read tag on blocks, make a const list of defaults that are allowed to copy over, for example, a list containing command bloock id, since if a command block exists, it will copy over tag and put in palette under block saying "tag": ... and each block of this type, if has a different tag, is assigned a different palette char id. allow input of tag whitelist comma separated. like --taglist="minecraft:command_block,minecraft:furnace" . BUT, only if reading tag is possible and stored in .schem, which i dont know if is.
+
+LASTLY, add docstrings & comments explaining everything going on where relevant, for things that are abundantly obvious at a glance for a programmer. like ik what NAME = "HI" does but maybe not
+table1[index0][index2] = 3 , like whats happening here. keep variable names and all names for functiosn etc descriptive. follor pep8 (optionally where readbility benefits). 

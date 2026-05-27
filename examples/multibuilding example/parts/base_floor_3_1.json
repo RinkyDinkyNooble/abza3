@@ -1,0 +1,249 @@
+{
+    "xsize": 16,
+    "zsize": 16,
+    "palette": {
+        "palette": [
+            {
+                "char": " ",
+                "block": "minecraft:air"
+            },
+            {
+                "char": "α",
+                "block": "minecraft:polished_andesite"
+            },
+            {
+                "char": "β",
+                "block": "minecraft:polished_blackstone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "γ",
+                "block": "minecraft:stone_bricks"
+            },
+            {
+                "char": "δ",
+                "block": "minecraft:smooth_stone"
+            },
+            {
+                "char": "ε",
+                "block": "minecraft:polished_blackstone_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "ζ",
+                "block": "create:andesite_ladder[facing=east,waterlogged=false]"
+            },
+            {
+                "char": "η",
+                "block": "minecraft:polished_blackstone_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "θ",
+                "block": "minecraft:polished_blackstone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "ι",
+                "block": "minecraft:white_concrete"
+            },
+            {
+                "char": "κ",
+                "block": "refurbished_furniture:birch_drawer[facing=north,left=true,open=false,right=false]",
+                "loot": "base"
+            },
+            {
+                "char": "λ",
+                "block": "refurbished_furniture:birch_desk[facing=north,left=true,right=true]"
+            },
+            {
+                "char": "μ",
+                "block": "refurbished_furniture:birch_drawer[facing=north,left=false,open=false,right=true]",
+                "loot": "base"
+            },
+            {
+                "char": "ν",
+                "block": "minecraft:smooth_quartz"
+            },
+            {
+                "char": "ξ",
+                "block": "refurbished_furniture:birch_drawer[facing=east,left=true,open=false,right=false]",
+                "loot": "base"
+            },
+            {
+                "char": "ο",
+                "block": "minecraft:smooth_quartz_stairs[facing=west,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "π",
+                "block": "refurbished_furniture:birch_drawer[facing=east,left=true,open=false,right=true]",
+                "loot": "base"
+            },
+            {
+                "char": "ρ",
+                "block": "refurbished_furniture:birch_drawer[facing=east,left=false,open=false,right=true]",
+                "loot": "base"
+            },
+            {
+                "char": "σ",
+                "block": "refurbished_furniture:birch_drawer[facing=south,left=false,open=false,right=true]",
+                "loot": "base"
+            },
+            {
+                "char": "τ",
+                "block": "refurbished_furniture:birch_desk[facing=south,left=true,right=true]"
+            },
+            {
+                "char": "υ",
+                "block": "refurbished_furniture:birch_drawer[facing=south,left=true,open=false,right=false]",
+                "loot": "base"
+            },
+            {
+                "char": "φ",
+                "block": "refurbished_furniture:computer[facing=north,powered=false]"
+            },
+            {
+                "char": "χ",
+                "block": "create:redstone_link[facing=up,powered=false,receiver=false]"
+            },
+            {
+                "char": "ψ",
+                "block": "refurbished_furniture:computer[facing=east,powered=false]"
+            },
+            {
+                "char": "ω",
+                "block": "refurbished_furniture:computer[facing=west,powered=false]"
+            },
+            {
+                "char": "Α",
+                "block": "minecraft:stone_brick_slab[type=top,waterlogged=false]"
+            },
+            {
+                "char": "Β",
+                "block": "minecraft:stone_brick_stairs[facing=south,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "Γ",
+                "block": "minecraft:stone_brick_stairs[facing=east,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "Δ",
+                "block": "minecraft:stone_brick_stairs[facing=west,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "Ε",
+                "block": "minecraft:sea_lantern"
+            },
+            {
+                "char": "Ζ",
+                "block": "minecraft:stone_brick_stairs[facing=north,half=top,shape=straight,waterlogged=false]"
+            }
+        ]
+    },
+    "slices": [
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "       αβα      ",
+            "     γαδδδαγ    ",
+            "     αδδδδδα    ",
+            "    αδδδδδδδα   ",
+            "    εζδδδδδδη   ",
+            "    αδδδδδδδα   ",
+            "     αδδδδδα    ",
+            "     γαδδδαγ    ",
+            "       αθα      ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "       αβα      ",
+            "     γακλμαγ    ",
+            "     α     α    ",
+            "    α   ν  ξα   ",
+            "    εζ  ο  πη   ",
+            "    α   ν  ρα   ",
+            "     α     α    ",
+            "     γαστυαγ    ",
+            "       αθα      ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "       αβα      ",
+            "     γα  φαγ    ",
+            "     α     α    ",
+            "    α   χ   α   ",
+            "    εζ     ψη   ",
+            "    α   ω   α   ",
+            "     α     α    ",
+            "     γα  χαγ    ",
+            "       αθα      ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "       αβα      ",
+            "     γα   αγ    ",
+            "     α     α    ",
+            "    α       α   ",
+            "    εζ      η   ",
+            "    α       α   ",
+            "     α     α    ",
+            "     γα   αγ    ",
+            "       αθα      ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "       ααα      ",
+            "     γα   αγ    ",
+            "     α     α    ",
+            "    α       α   ",
+            "    αζ      α   ",
+            "    α       α   ",
+            "     α     α    ",
+            "     γα   αγ    ",
+            "       ααα      ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "      ΑΒΒΒΑ     ",
+            "    ΑΑγαααγΑΑ   ",
+            "    ΑααδδδααΑ   ",
+            "   ΑγαδδδδδαγΑ  ",
+            "   ΓαδδδδδδδαΔ  ",
+            "   ΓαζδδΕδδδαΔ  ",
+            "   ΓαδδδδδδδαΔ  ",
+            "   ΑγαδδδδδαγΑ  ",
+            "    ΑααδδδααΑ   ",
+            "    ΑΑγαααγΑΑ   ",
+            "      ΑΖΖΖΑ     ",
+            "                "
+        ]
+    ]
+}

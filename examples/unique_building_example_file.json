@@ -1,0 +1,86 @@
+{
+    "filler": "#",
+    "rubble": "}",
+    "allowDoors": false,
+    "maxcellars": 3,
+    "mincellars": 1,
+    "minfloors": 8,
+    "maxfloors": 8,
+    "parts": [
+        {
+            "ground": false,
+            "cellar": true,
+            "top": false,
+            "part": "building001_cellar0"
+        },
+        {
+            "ground": true,
+            "cellar": false,
+            "top": false,
+            "floor": 0,
+            "part": "building001_ground"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": false,
+            "floor": 1,
+            "part": "building001_floor1"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": false,
+            "floor": 2,
+            "part": "building001_floor2"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": false,
+            "floor": 3,
+            "part": "building001_floor3"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": false,
+            "floor": 4,
+            "part": "building001_floor4"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": false,
+            "floor": 5,
+            "part": "building001_floor5"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": false,
+            "floor": 6,
+            "part": "building001_floor6"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": false,
+            "floor": 7,
+            "part": "building001_floor7"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": false,
+            "floor": 8,
+            "part": "building001_floor8"
+        },
+        {
+            "ground": false,
+            "cellar": false,
+            "top": true,
+            "part": "building001_top"
+        }
+    ]
+}

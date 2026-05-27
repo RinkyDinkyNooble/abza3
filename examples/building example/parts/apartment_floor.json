@@ -1,0 +1,376 @@
+{
+    "xsize": 16,
+    "zsize": 16,
+    "palette": {
+        "palette": [
+            {
+                "char": " ",
+                "block": "minecraft:air"
+            },
+            {
+                "char": "α",
+                "block": "minecraft:gray_concrete"
+            },
+            {
+                "char": "β",
+                "block": "minecraft:quartz_block"
+            },
+            {
+                "char": "γ",
+                "block": "minecraft:quartz_slab[type=bottom,waterlogged=false]"
+            },
+            {
+                "char": "δ",
+                "block": "minecraft:quartz_slab[type=top,waterlogged=false]"
+            },
+            {
+                "char": "ε",
+                "block": "minecraft:oak_planks"
+            },
+            {
+                "char": "ζ",
+                "block": "minecraft:quartz_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "η",
+                "block": "minecraft:dark_oak_door[facing=north,half=lower,hinge=left,open=false,powered=false]"
+            },
+            {
+                "char": "θ",
+                "block": "refurbished_furniture:black_bath[facing=west,type=head]"
+            },
+            {
+                "char": "ι",
+                "block": "refurbished_furniture:black_bath[facing=west,type=bottom]"
+            },
+            {
+                "char": "κ",
+                "block": "refurbished_furniture:black_basin[facing=north]"
+            },
+            {
+                "char": "λ",
+                "block": "refurbished_furniture:recycle_bin[facing=north,open=false]"
+            },
+            {
+                "char": "μ",
+                "block": "refurbished_furniture:spruce_storage_cabinet[facing=east,hinge=right,open=false]",
+                "loot": "apartment"
+            },
+            {
+                "char": "ν",
+                "block": "minecraft:black_stained_glass_pane[east=false,north=true,south=true,waterlogged=false,west=false]"
+            },
+            {
+                "char": "ξ",
+                "block": "minecraft:oak_leaves[distance=7,persistent=true,waterlogged=false]"
+            },
+            {
+                "char": "ο",
+                "block": "refurbished_furniture:black_toilet[facing=west]"
+            },
+            {
+                "char": "π",
+                "block": "minecraft:dark_oak_door[facing=east,half=lower,hinge=left,open=false,powered=false]"
+            },
+            {
+                "char": "ρ",
+                "block": "refurbished_furniture:spruce_storage_cabinet[facing=east,hinge=left,open=false]",
+                "loot": "apartment"
+            },
+            {
+                "char": "σ",
+                "block": "refurbished_furniture:spruce_drawer[facing=east,left=false,open=false,right=false]",
+                "loot": "apartment"
+            },
+            {
+                "char": "τ",
+                "block": "refurbished_furniture:black_kitchen_drawer[facing=north,open=false]",
+                "loot": "apartment"
+            },
+            {
+                "char": "υ",
+                "block": "refurbished_furniture:gray_kitchen_sink[facing=north]"
+            },
+            {
+                "char": "φ",
+                "block": "refurbished_furniture:dark_stove[facing=north,lit=false,open=false,powered=false]"
+            },
+            {
+                "char": "χ",
+                "block": "refurbished_furniture:dark_freezer[facing=north,open=false]"
+            },
+            {
+                "char": "ψ",
+                "block": "minecraft:black_bed[facing=east,occupied=false,part=foot]"
+            },
+            {
+                "char": "ω",
+                "block": "minecraft:black_bed[facing=east,occupied=false,part=head]"
+            },
+            {
+                "char": "Α",
+                "block": "create:framed_glass_door[facing=west,half=lower,hinge=right,open=false,powered=false,visible=true]"
+            },
+            {
+                "char": "Β",
+                "block": "refurbished_furniture:spruce_drawer[facing=east,left=true,open=false,right=false]",
+                "loot": "apartment"
+            },
+            {
+                "char": "Γ",
+                "block": "create:framed_glass_door[facing=west,half=lower,hinge=left,open=false,powered=false,visible=true]"
+            },
+            {
+                "char": "Δ",
+                "block": "refurbished_furniture:black_sofa[facing=west,shape=default]"
+            },
+            {
+                "char": "Ε",
+                "block": "refurbished_furniture:spruce_drawer[facing=east,left=true,open=false,right=true]",
+                "loot": "apartment"
+            },
+            {
+                "char": "Ζ",
+                "block": "refurbished_furniture:black_kitchen_cabinetry[facing=south,shape=default]"
+            },
+            {
+                "char": "Η",
+                "block": "refurbished_furniture:black_kitchen_drawer[facing=south,open=false]",
+                "loot": "apartment"
+            },
+            {
+                "char": "Θ",
+                "block": "refurbished_furniture:spruce_table[east=false,north=false,south=false,west=false]"
+            },
+            {
+                "char": "Ι",
+                "block": "refurbished_furniture:spruce_chair[facing=east,tucked=false]"
+            },
+            {
+                "char": "Κ",
+                "block": "refurbished_furniture:spruce_desk[facing=east,left=false,right=true]"
+            },
+            {
+                "char": "Λ",
+                "block": "minecraft:black_stained_glass_pane[east=true,north=true,south=false,waterlogged=false,west=false]"
+            },
+            {
+                "char": "Μ",
+                "block": "minecraft:black_stained_glass_pane[east=true,north=false,south=false,waterlogged=false,west=true]"
+            },
+            {
+                "char": "Ν",
+                "block": "minecraft:black_stained_glass_pane[east=false,north=true,south=false,waterlogged=false,west=true]"
+            },
+            {
+                "char": "Ξ",
+                "block": "minecraft:oak_stairs[facing=south,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "Ο",
+                "block": "create:framed_glass_pane[east=true,north=false,south=false,waterlogged=false,west=true]"
+            },
+            {
+                "char": "Π",
+                "block": "minecraft:oak_stairs[facing=east,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "Ρ",
+                "block": "minecraft:oak_stairs[facing=west,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "Σ",
+                "block": "minecraft:dark_oak_door[facing=north,half=upper,hinge=left,open=false,powered=false]"
+            },
+            {
+                "char": "Τ",
+                "block": "refurbished_furniture:light_lightswitch[enabled=false,face=wall,facing=south,powered=false]"
+            },
+            {
+                "char": "Υ",
+                "block": "minecraft:dark_oak_door[facing=east,half=upper,hinge=left,open=false,powered=false]"
+            },
+            {
+                "char": "Φ",
+                "block": "refurbished_furniture:black_lamp[powered=false]"
+            },
+            {
+                "char": "Χ",
+                "block": "refurbished_furniture:spruce_storage_jar[facing=north]"
+            },
+            {
+                "char": "Ψ",
+                "block": "refurbished_furniture:frying_pan[facing=north,lit=false]"
+            },
+            {
+                "char": "Ω",
+                "block": "refurbished_furniture:dark_fridge[facing=north,open=false]",
+                "loot": "food"
+            },
+            {
+                "char": "∑",
+                "block": "create:framed_glass_pane[east=false,north=true,south=true,waterlogged=false,west=false]"
+            },
+            {
+                "char": "∆",
+                "block": "create:framed_glass_door[facing=west,half=upper,hinge=right,open=false,powered=false,visible=true]"
+            },
+            {
+                "char": "∏",
+                "block": "create:framed_glass_door[facing=west,half=upper,hinge=left,open=false,powered=false,visible=true]"
+            },
+            {
+                "char": "∫",
+                "block": "refurbished_furniture:television[facing=east,powered=false]"
+            },
+            {
+                "char": "√",
+                "block": "refurbished_furniture:dark_toaster[facing=south,powered=false]"
+            },
+            {
+                "char": "∞",
+                "block": "refurbished_furniture:dark_microwave[facing=south,open=false]"
+            },
+            {
+                "char": "≈",
+                "block": "refurbished_furniture:spruce_cutting_board[facing=south]"
+            },
+            {
+                "char": "≠",
+                "block": "refurbished_furniture:plate"
+            },
+            {
+                "char": "≤",
+                "block": "refurbished_furniture:dark_range_hood[facing=north,powered=false]"
+            },
+            {
+                "char": "≥",
+                "block": "refurbished_furniture:dark_ceiling_light[face=ceiling,facing=west,powered=false]"
+            },
+            {
+                "char": "∧",
+                "block": "refurbished_furniture:black_kitchen_storage_cabinet[facing=north,hinge=right,open=false]",
+                "loot": "apartment"
+            },
+            {
+                "char": "∨",
+                "block": "refurbished_furniture:black_kitchen_storage_cabinet[facing=north,hinge=left,open=false]",
+                "loot": "apartment"
+            },
+            {
+                "char": "⊂",
+                "block": "refurbished_furniture:dark_ceiling_light[face=ceiling,facing=north,powered=false]"
+            }
+        ]
+    },
+    "slices": [
+        [
+            "                ",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            " ββ   βββββββββ ",
+            " ββγβββββββββββ ",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "δββββββββββββββδ",
+            "δββββββββββββββδ",
+            "δββββββββββββββδ",
+            "δββββββββββββββδ",
+            "δββββββββββββββδ",
+            "δββββββββββββββδ",
+            "δββββββββββββββδ",
+            "δββββββββββββββδ",
+            "δδδδδδδδδδδδδδδδ"
+        ],
+        [
+            "                ",
+            " ββ          ββ ",
+            " ββεεεεεεεεεεββ ",
+            "  ε   βζ     ε  ",
+            "  ε          ε  ",
+            "ααεαααααααηααεαα",
+            "ααεθικαλ    μεαα",
+            "νξεο  π     ρεξν",
+            "ν εαααα     σε ν",
+            "ν ετυφτχ   ψωε ν",
+            "ν Α         Βε ν",
+            "ν Γ       Δ Εε ν",
+            "ν εΖΗΗΖΘΙ   Κε ν",
+            "ν εεεεεεεεεεεε ν",
+            "ν              ν",
+            "ΛΜΜΜΜΜΜΜΜΜΜΜΜΜΜΝ"
+        ],
+        [
+            "                ",
+            " ββ          ββ ",
+            " ββεΞΞεεΟΟΟεεββ ",
+            "  Π  βζ      Ρ  ",
+            "  Π          Ρ  ",
+            "ααεαααααααΣααεαα",
+            "ααε   α  Τ  μεαα",
+            " ξε   Υ     ρεξ ",
+            "  εαααα     Φε  ",
+            "  εΧ Ψ Ω     ∑  ",
+            "  ∆          ∑  ",
+            "  ∏         ∫∑  ",
+            "  ε√∞≈ ≠     ε  ",
+            "  εεΟΟΟεεΟΟΟεε  ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            " ββ          ββ ",
+            " ββεΞΞεεΟΟΟεεββ ",
+            "  Π βζ       Ρ  ",
+            "  Π          Ρ  ",
+            "ααεααααααααααεαα",
+            "ααε   α      εαα",
+            " ξε   α      εξ ",
+            "  εαααα      ε  ",
+            "  ε  ≤       ∑  ",
+            "  ε          ∑  ",
+            "  ε          ∑  ",
+            "  ε          ε  ",
+            "  εεΟΟΟεεΟΟΟεε  ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            " ββξξξξξξξξξξββ ",
+            " ββεεεεεεεεεεββ ",
+            " ξεβζ        εξ ",
+            " ξε          εξ ",
+            "ααεααααααααααεαα",
+            "ααε   α      εαα",
+            " ξε  ≥α      εξ ",
+            " ξεαααα      εξ ",
+            " ξε∧∧∧∨      εξ ",
+            " ξε       ⊂  εξ ",
+            " ξε          εξ ",
+            " ξε          εξ ",
+            " ξεεεεεεεεεεεεξ ",
+            " ξξξξξξξξξξξξξξ ",
+            "                "
+        ],
+        [
+            "                ",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            " ββζ   ββββββββ ",
+            " ββββββββββββββ ",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            " ββββββββββββββ ",
+            "                "
+        ]
+    ]
+}

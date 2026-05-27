@@ -1,0 +1,26 @@
+{
+  "filler": "#",
+  "rubble": "}",
+  "maxcellars": 0,
+  "allowDoors": false,
+  "parts": [
+    {
+      "ground": true,
+      "cellar": false,
+      "top": false,
+      "part": "apartment_ground"
+    },
+    {
+      "ground": false,
+      "cellar": false,
+      "top": false,
+      "part": "apartment_floor"
+    },
+    {
+      "ground": false,
+      "cellar": false,
+      "top": true,
+      "part": "apartment_top"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+    "xsize": 16,
+    "zsize": 16,
+    "palette": {
+        "palette": [
+            {
+                "char": " ",
+                "block": "minecraft:air"
+            },
+            {
+                "char": "α",
+                "block": "minecraft:quartz_slab[type=top,waterlogged=false]"
+            },
+            {
+                "char": "β",
+                "block": "minecraft:quartz_block"
+            },
+            {
+                "char": "γ",
+                "block": "minecraft:quartz_slab[type=bottom,waterlogged=false]"
+            },
+            {
+                "char": "δ",
+                "block": "minecraft:gray_concrete"
+            },
+            {
+                "char": "ε",
+                "block": "minecraft:black_stained_glass_pane[east=true,north=false,south=true,waterlogged=false,west=false]"
+            },
+            {
+                "char": "ζ",
+                "block": "minecraft:black_stained_glass_pane[east=true,north=false,south=false,waterlogged=false,west=true]"
+            },
+            {
+                "char": "η",
+                "block": "minecraft:black_stained_glass_pane[east=false,north=false,south=true,waterlogged=false,west=true]"
+            },
+            {
+                "char": "θ",
+                "block": "minecraft:black_stained_glass_pane[east=false,north=true,south=true,waterlogged=false,west=false]"
+            },
+            {
+                "char": "ι",
+                "block": "minecraft:black_stained_glass_pane[east=true,north=true,south=false,waterlogged=false,west=false]"
+            },
+            {
+                "char": "κ",
+                "block": "create:framed_glass_door[facing=east,half=lower,hinge=right,open=false,powered=false,visible=true]"
+            },
+            {
+                "char": "λ",
+                "block": "create:framed_glass_door[facing=east,half=upper,hinge=right,open=false,powered=false,visible=true]"
+            },
+            {
+                "char": "μ",
+                "block": "minecraft:rail[shape=south_east,waterlogged=false]"
+            },
+            {
+                "char": "ν",
+                "block": "minecraft:rail[shape=south_west,waterlogged=false]"
+            },
+            {
+                "char": "ξ",
+                "block": "minecraft:rail[shape=north_east,waterlogged=false]"
+            },
+            {
+                "char": "ο",
+                "block": "minecraft:rail[shape=north_west,waterlogged=false]"
+            }
+        ]
+    },
+    "slices": [
+        [
+            "αααααααααααααααα",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "αββ   βββββββββα",
+            "αββγβββββββββββα",
+            "δββββββββββββββδ",
+            "δββββββββββββββδ",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "αββββββββββββββα",
+            "αααααααααααααααα"
+        ],
+        [
+            "εζζζζζζζζζζζζζζη",
+            "θ              θ",
+            "ιβδδδδδ        θ",
+            "  δ   δ        θ",
+            "  δ   κ        θ",
+            "δδδδδδδδδδδδδδδδ",
+            "δδδδδδδδδδδδδδδδ",
+            "                ",
+            "       δδ       ",
+            "       δδ       ",
+            "                ",
+            "   δδ      δδ   ",
+            "   δδ      δδ   ",
+            "                ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            " βδδδδδ         ",
+            "  δ   δ         ",
+            "  δ   λ         ",
+            "  δδδδδ         ",
+            "                ",
+            "                ",
+            "       μν       ",
+            "       ξο       ",
+            "                ",
+            "   μν      μν   ",
+            "   ξο      ξο   ",
+            "                ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            " βββββββ        ",
+            " βββββββ        ",
+            " βββββββ        ",
+            " βββββββ        ",
+            " βββββββ        ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                "
+        ]
+    ]
+}

@@ -1,0 +1,204 @@
+{
+    "xsize": 16,
+    "zsize": 16,
+    "palette": {
+        "palette": [
+            {
+                "char": " ",
+                "block": "minecraft:air"
+            },
+            {
+                "char": "α",
+                "block": "minecraft:smooth_stone"
+            },
+            {
+                "char": "β",
+                "block": "minecraft:iron_bars[east=false,north=true,south=true,waterlogged=false,west=false]"
+            },
+            {
+                "char": "γ",
+                "block": "minecraft:polished_andesite"
+            },
+            {
+                "char": "δ",
+                "block": "minecraft:stone_brick_stairs[facing=east,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "ε",
+                "block": "refurbished_furniture:birch_crate[open=false]",
+                "loot": "base"
+            },
+            {
+                "char": "ζ",
+                "block": "minecraft:chiseled_stone_bricks"
+            },
+            {
+                "char": "η",
+                "block": "minecraft:polished_blackstone_stairs[facing=east,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "θ",
+                "block": "minecraft:command_block[conditional=false,facing=north]",
+                "tag": {
+                    "Command": "/spawn superbwarfare:bmp_2 {Energy:100000}",
+                    "auto": 1,
+                    "conditionMet": 1
+                }
+            },
+            {
+                "char": "ι",
+                "block": "minecraft:stone_bricks"
+            },
+            {
+                "char": "κ",
+                "block": "minecraft:stone_brick_stairs[facing=north,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "λ",
+                "block": "minecraft:polished_blackstone_stairs[facing=north,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "μ",
+                "block": "minecraft:iron_bars[east=true,north=false,south=false,waterlogged=false,west=true]"
+            },
+            {
+                "char": "ν",
+                "block": "infectious:barbed_wire[facing=east,waterlogged=false]"
+            },
+            {
+                "char": "ξ",
+                "block": "infectious:barbed_wire[facing=north,waterlogged=false]"
+            },
+            {
+                "char": "ο",
+                "block": "minecraft:white_concrete"
+            },
+            {
+                "char": "π",
+                "block": "minecraft:stone_brick_slab[type=bottom,waterlogged=false]"
+            },
+            {
+                "char": "ρ",
+                "block": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]"
+            },
+            {
+                "char": "σ",
+                "block": "minecraft:polished_deepslate"
+            },
+            {
+                "char": "τ",
+                "block": "minecraft:black_stained_glass"
+            }
+        ]
+    },
+    "slices": [
+        [
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα",
+            "αααααααααααααααα"
+        ],
+        [
+            " β  γ         γ ",
+            " β  δε          ",
+            " β  δε          ",
+            " β  γε          ",
+            " β  ζε          ",
+            " β  ηε    θ     ",
+            " β  ζε          ",
+            " β  γ           ",
+            " β  δ           ",
+            " β  δ           ",
+            " β  γ εεεεεε  γ ",
+            " β  ιγκγζλζγκγι ",
+            " β              ",
+            " β              ",
+            " γμμμμμμμμμμμμγ ",
+            "                "
+        ],
+        [
+            " β  γ         γ ",
+            " β  δ           ",
+            " β  δε          ",
+            " β  γε          ",
+            " β  ζε          ",
+            " β  η           ",
+            " β  ζ           ",
+            " β  γ           ",
+            " β  δ           ",
+            " β  δ           ",
+            " β  γ εεεε    γ ",
+            " β  ιγκγζλζγκγι ",
+            " β              ",
+            " β              ",
+            " γμμμμμμμμμμμμγ ",
+            "                "
+        ],
+        [
+            " β  γ         γ ",
+            " β  δ           ",
+            " β  δ           ",
+            " β  γ           ",
+            " β  ζ           ",
+            " β  η           ",
+            " β  ζ           ",
+            " β  γ           ",
+            " β  δ           ",
+            " β  δ           ",
+            " β  γ         γ ",
+            " β  ιγκγζλζγκγι ",
+            " β              ",
+            " β              ",
+            " γμμμμμμμμμμμμγ ",
+            "                "
+        ],
+        [
+            " ν  γ         γ ",
+            " ν  δ           ",
+            " ν  δ           ",
+            " ν  γ           ",
+            " ν  ζ           ",
+            " ν  η           ",
+            " ν  ζ           ",
+            " ν  γ           ",
+            " ν  δ           ",
+            " ν  δ           ",
+            " ν  γ         γ ",
+            " ν  ιγκγζλζγκγι ",
+            " ν              ",
+            " ν              ",
+            " ζξξξξξξξξξξξξζ ",
+            "                "
+        ],
+        [
+            "   πρρστττττσρρπ",
+            "   πρρστττττσρρπ",
+            "   πρρστττττσρρπ",
+            "   πρρστττττσρρπ",
+            "   πρρστττττσρρπ",
+            "   πρρστττττσρρπ",
+            "   πρρστττττσρρπ",
+            "   πρρστττττσρρπ",
+            "   πρρστττττσρρπ",
+            "   πρρσσσσσσσρρπ",
+            "   πρρρρρρρρρρρπ",
+            "   πρρρρρρρρρρρπ",
+            "   πππππππππππππ",
+            "                ",
+            "                ",
+            "                "
+        ]
+    ]
+}

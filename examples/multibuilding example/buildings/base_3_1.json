@@ -1,0 +1,28 @@
+{
+  "filler": "#",
+  "rubble": "}",
+  "maxcellars": 0,
+  "minfloors": 2,
+  "maxfloors": 2,
+  "allowDoors": false,
+  "parts": [
+    {
+      "ground": true,
+      "cellar": false,
+      "top": false,
+      "part": "base_ground_3_1"
+    },
+    {
+      "ground": false,
+      "cellar": false,
+      "top": false,
+      "part": "base_floor_3_1"
+    },
+    {
+      "ground": false,
+      "cellar": false,
+      "top": true,
+      "part": "base_top_3_1"
+    }
+  ]
+}

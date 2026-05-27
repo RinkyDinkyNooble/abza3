@@ -1,0 +1,335 @@
+{
+    "xsize": 16,
+    "zsize": 16,
+    "palette": {
+        "palette": [
+            {
+                "char": " ",
+                "block": "minecraft:air"
+            },
+            {
+                "char": "α",
+                "block": "minecraft:oak_leaves[distance=7,persistent=true,waterlogged=false]"
+            },
+            {
+                "char": "β",
+                "block": "minecraft:dark_oak_log[axis=y]"
+            },
+            {
+                "char": "γ",
+                "block": "minecraft:dark_oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "δ",
+                "block": "refurbished_furniture:stone_stepping_stones[facing=east]"
+            },
+            {
+                "char": "ε",
+                "block": "minecraft:dark_oak_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "ζ",
+                "block": "minecraft:dark_oak_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "η",
+                "block": "refurbished_furniture:deepslate_stepping_stones[facing=north]"
+            },
+            {
+                "char": "θ",
+                "block": "minecraft:stone_bricks"
+            },
+            {
+                "char": "ι",
+                "block": "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "κ",
+                "block": "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "λ",
+                "block": "minecraft:polished_andesite"
+            },
+            {
+                "char": "μ",
+                "block": "minecraft:stone_brick_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "ν",
+                "block": "refurbished_furniture:andesite_stepping_stones[facing=south]"
+            },
+            {
+                "char": "ξ",
+                "block": "refurbished_furniture:andesite_stepping_stones[facing=east]"
+            },
+            {
+                "char": "ο",
+                "block": "minecraft:barrel[facing=east,open=false]",
+                "loot": "statue"
+            },
+            {
+                "char": "π",
+                "block": "minecraft:polished_andesite_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "ρ",
+                "block": "minecraft:stone_brick_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "σ",
+                "block": "refurbished_furniture:deepslate_stepping_stones[facing=west]"
+            },
+            {
+                "char": "τ",
+                "block": "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "υ",
+                "block": "refurbished_furniture:stone_stepping_stones[facing=south]"
+            },
+            {
+                "char": "φ",
+                "block": "minecraft:deepslate_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]"
+            },
+            {
+                "char": "χ",
+                "block": "minecraft:deepslate_tile_stairs[facing=east,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "ψ",
+                "block": "minecraft:deepslate_tiles"
+            },
+            {
+                "char": "ω",
+                "block": "minecraft:deepslate_tile_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "Α",
+                "block": "minecraft:andesite_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]"
+            },
+            {
+                "char": "Β",
+                "block": "minecraft:chiseled_deepslate"
+            },
+            {
+                "char": "Γ",
+                "block": "minecraft:stone_brick_wall[east=none,north=none,south=low,up=true,waterlogged=false,west=none]"
+            },
+            {
+                "char": "Δ",
+                "block": "minecraft:stone_brick_wall[east=none,north=tall,south=tall,up=false,waterlogged=false,west=none]"
+            },
+            {
+                "char": "Ε",
+                "block": "minecraft:stone_brick_wall[east=low,north=low,south=none,up=true,waterlogged=false,west=none]"
+            },
+            {
+                "char": "Ζ",
+                "block": "minecraft:polished_deepslate"
+            },
+            {
+                "char": "Η",
+                "block": "minecraft:deepslate_tile_stairs[facing=west,half=top,shape=straight,waterlogged=false]"
+            },
+            {
+                "char": "Θ",
+                "block": "minecraft:stone_button[face=wall,facing=east,powered=false]"
+            },
+            {
+                "char": "Ι",
+                "block": "minecraft:potted_wither_rose"
+            },
+            {
+                "char": "Κ",
+                "block": "minecraft:mossy_stone_brick_wall[east=none,north=none,south=low,up=true,waterlogged=false,west=none]"
+            },
+            {
+                "char": "Λ",
+                "block": "minecraft:stone_brick_slab[type=top,waterlogged=false]"
+            }
+        ]
+    },
+    "slices": [
+        [
+            "ααααααα  ααααααα",
+            "α              α",
+            "α βγγβ δ  βγγβ α",
+            "α ε          ζ α",
+            "α ε η        ζ α",
+            "α β  θιιιιθ  β α",
+            "α    κλλλλμν   α",
+            "     κλλλλμ  ξ  ",
+            "     κλοπλμ     ",
+            "α  η κλλλλμ    α",
+            "α β  θρρρρθ  β α",
+            "α ε          ζ α",
+            "α ε   σ      ζ α",
+            "α βττβ   υβττβ α",
+            "α              α",
+            "ααααααα  ααααααα"
+        ],
+        [
+            "ααααααα  ααααααα",
+            "α              α",
+            "α              α",
+            "α              α",
+            "α              α",
+            "α    φ    φ    α",
+            "α              α",
+            "        χψ      ",
+            "      ωψ        ",
+            "α              α",
+            "α    φ    φ    α",
+            "α              α",
+            "α              α",
+            "α              α",
+            "α              α",
+            "ααααααα  ααααααα"
+        ],
+        [
+            "αααααααααααααααα",
+            "α              α",
+            "α              α",
+            "α              α",
+            "α              α",
+            "α    φ    φ    α",
+            "α      Α       α",
+            "α       ψ      α",
+            "α      ψ       α",
+            "α              α",
+            "α    φ    φ    α",
+            "α              α",
+            "α              α",
+            "α              α",
+            "α              α",
+            "αααααααααααααααα"
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "     φ    φ     ",
+            "       Α        ",
+            "        Β       ",
+            "       ωΒ       ",
+            "                ",
+            "     φ    φ     ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "     φ Γ  φ     ",
+            "       Δ        ",
+            "       ΕΖ       ",
+            "        Ζ       ",
+            "       χΗ       ",
+            "     φ    φ     ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "     φ    φ     ",
+            "       ψΒΘ      ",
+            "        Ζ       ",
+            "        Ζ       ",
+            "       ΙΒΘ      ",
+            "     φ    φ     ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "     φ    φ     ",
+            "       Κ        ",
+            "       ψψ       ",
+            "       ψψ       ",
+            "                ",
+            "     φ    φ     ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "     φ    φ     ",
+            "                ",
+            "       ψψ       ",
+            "       ψψ       ",
+            "                ",
+            "     φ    φ     ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "     φ    φ     ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "     φ    φ     ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                "
+        ],
+        [
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "     θΛΛΛΛθ     ",
+            "     ΛΛΛΛΛΛ     ",
+            "     ΛΛΛΛΛΛ     ",
+            "     ΛΛΛΛΛΛ     ",
+            "     ΛΛΛΛΛΛ     ",
+            "     θΛΛΛΛθ     ",
+            "                ",
+            "                ",
+            "                ",
+            "                ",
+            "                "
+        ]
+    ]
+}
