@@ -4,10 +4,12 @@ import math
 import argparse
 from typing import List, Dict, Any, Optional, Set, Tuple
 import nbtlib
+from beartype import beartype
 
 # Constants
 DEFAULT_OUTPUT_DIR = os.path.join(os.path.expanduser("~"), "Downloads")
 
+@beartype
 def decode_varints(byte_array: List[int]) -> List[int]:
     """
     Decodes a byte array containing VarInts (used by Sponge schematics for BlockData)
@@ -33,6 +35,7 @@ def decode_varints(byte_array: List[int]) -> List[int]:
         result.append(value)
     return result
 
+@beartype
 def extract_tag_dict(entity_compound: nbtlib.Compound) -> Dict[str, Any]:
     """
     Converts a BlockEntity NBT compound into a standard Python dict.
@@ -89,6 +92,7 @@ class PaletteManager:
             if code_point > 0x10FFFF:
                 raise RuntimeError("Ran out of unique UTF-8 characters!")
 
+    @beartype
     def get_char(self, block_id: str, tag_dict: Optional[Dict[str, Any]] = None) -> str:
         """
         Gets or creates a character for a specific block and its tag.
@@ -111,6 +115,7 @@ class PaletteManager:
             
         return new_char
         
+    @beartype
     def to_dict(self) -> Dict[str, Any]:
         """Returns the palette mapped out for JSON serialization."""
         res = []
@@ -135,7 +140,7 @@ class SchematicParser:
         except Exception as e:
             raise RuntimeError(f"Failed to load schematic file '{self.file_path}': {e}")
             
-        root = self.nbt_data.root
+        root = self.nbt_data
         
         # Read dimensions
         self.width = int(root.get("Width", 0))
@@ -162,6 +167,7 @@ class SchematicParser:
                 x, y, z = int(pos[0]), int(pos[1]), int(pos[2])
                 self.entity_map[(x, y, z)] = extract_tag_dict(entity)
                 
+    @beartype
     def get_char_for_block(self, x: int, y: int, z: int) -> str:
         """Returns the palette character for a specific coordinate."""
         if x < 0 or x >= self.width or y < 0 or y >= self.height or z < 0 or z >= self.length:
@@ -183,6 +189,7 @@ class SchematicParser:
             
         return self.palette_mgr.get_char(block_name, tag_dict)
         
+    @beartype
     def generate_slice(self, start_x: int, start_z: int, start_y: int, height: int) -> List[List[str]]:
         """
         Extracts a chunk of blocks (16x16 in X/Z) for a specific height range.
@@ -203,6 +210,7 @@ class SchematicParser:
             slices.append(layer)
         return slices
 
+@beartype
 def generate_building(
     parser: SchematicParser,
     base_name: str,
@@ -298,6 +306,7 @@ def generate_building(
     
     return building_json, generated_files
 
+@beartype
 def save_json(path: str, data: Any):
     """Helper to save dicts as pretty JSON files."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
