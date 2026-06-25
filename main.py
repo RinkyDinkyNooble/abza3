@@ -48,9 +48,9 @@ def extract_tag_dict(entity_compound: nbtlib.Compound) -> Dict[str, Any]:
         tag_copy.pop(key, None)
         
     def to_python(val: Any) -> Any:
-        if isinstance(val, nbtlib.Compound):
-            return {k: to_python(v) for k, v in val.items()}
-        elif isinstance(val, nbtlib.List):
+        if isinstance(val, nbtlib.Compound) or isinstance(val, dict):
+            return {str(k): to_python(v) for k, v in val.items()}
+        elif isinstance(val, nbtlib.List) or isinstance(val, list):
             return [to_python(v) for v in val]
         elif isinstance(val, nbtlib.String):
             return str(val)
@@ -185,7 +185,37 @@ class SchematicParser:
         # Extract base block name without properties (e.g., 'minecraft:chest[facing=north]' -> 'minecraft:chest')
         base_block_name = block_name.split('[')[0]
         if block_name in self.taglist or base_block_name in self.taglist:
-            tag_dict = self.entity_map.get((x, y, z))
+            entity = self.entity_map.get((x, y, z))
+            
+            # Fastpaintings multi-block check
+            if not entity and base_block_name == "fastpaintings:painting" and '[' in block_name:
+                props_str = block_name.split('[')[1].split(']')[0]
+                props = dict(p.split('=') for p in props_str.split(','))
+                x_off = int(props.get('x_offset', 0))
+                y_off = int(props.get('y_offset', 0))
+                
+                if x_off != 0 or y_off != 0:
+                    ox_candidates = [x + x_off, x - x_off, x]
+                    oz_candidates = [z + x_off, z - x_off, z]
+                    oy = y + y_off
+                    
+                    for ox in ox_candidates:
+                        for oz in oz_candidates:
+                            if abs(ox - x) + abs(oz - z) == x_off:
+                                ent = self.entity_map.get((ox, oy, oz))
+                                if ent and "variant" in ent:
+                                    entity = ent
+                                    break
+                        if entity:
+                            break
+                            
+            if entity:
+                if base_block_name == "fastpaintings:painting":
+                    variant = entity.get("variant")
+                    if variant is not None:
+                        tag_dict = {"variant": str(variant)}
+                else:
+                    tag_dict = dict(entity)
             
         return self.palette_mgr.get_char(block_name, tag_dict)
         
